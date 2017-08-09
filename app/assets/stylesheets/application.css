@@ -14,6 +14,7 @@
  *= require_self
  */
 
+/*プロフィール画像*/
 .profile-img{
 	width: 400px;
 	height: 300px;
@@ -21,7 +22,26 @@
  	margin: 0 auto; 
 }
 
-
+/*h1*/
+h1{
+	color: white;
+	padding-top: 30vh;
+}
 .top-name{
 	text-align: center;
+}
+
+/*背景画像*/
+.back-img{
+	height: 150vh;
+	background-image: url(back.jpg); 
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+/*背景余白をなくすリセット*/
+*{
+	margin: 0;
+	padding: 0;
 }
