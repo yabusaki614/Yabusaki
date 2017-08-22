@@ -1,0 +1,19 @@
+<div class="back-img">
+<div class="scr">
+<h1>投稿詳細</h1>
+<!--<h1>タイトル</h1>-->
+<p><%= @article.title %></p>
+<br>
+<!--<h2>本文</h2>-->
+<p class="body"><%= @article.body %></p>
+<br>
+<!--<h2>著者</h2>-->
+<p><%= @article.author %></p>
+
+
+<%# link_to "編集", edit_post_path(@post.id), class: "btn edit-btn" %>
+<%# link_to "削除", destroy_post_path(@post.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>
+<br>
+<%= link_to "投稿一覧にもどる", :controller => "articles", :action => "index" %>
+</div>
+</div>

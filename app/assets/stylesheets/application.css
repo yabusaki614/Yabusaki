@@ -33,6 +33,7 @@ h1{
 
 /*背景画像*/
 .back-img{
+	color: white;
 	height: 150vh;
 	background-image: url(back.jpg); 
 	background-size: cover;
@@ -44,4 +45,14 @@ h1{
 *{
 	margin: 0;
 	padding: 0;
+}
+
+.scr{
+	margin:10px 20px; 
+	padding:10px 20px;
+}
+p.body {
+	border-top: double 5px #000;
+	border-bottom: double 5px #000;
+	
 }
