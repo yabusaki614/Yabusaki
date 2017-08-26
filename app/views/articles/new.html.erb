@@ -1,12 +1,22 @@
-<div class="back-img">
+<div class="back-img2">
+	<div class="parent">
+		<div class="center">
  <h1>新規投稿</h1>
  <%= form_for (@article) do |f| %>
- <div>タイトル:<%= f.text_field :title %></div>
- <div>本文:<%= f.text_area :body %></div>
- <div>著者:<%= f.text_field :author %></div>
+ <div >タイトル<br>
+ <%= f.text_field :title ,:size => "10x20"%></div>
+ <div> 本文 <br>
+ <%= f.text_area :body ,:size => "15x15"%></div>
+ <div> 著者 <br>
+ <%= f.text_field :author ,:size => "10x15"%></div>
+<br>
 
-<div><%= f.submit "送信" %></div>
+<div><%# f.submit "送信" %>
+	<input type="submit" value="" class="submit_btn">
+</div>
 <% end %>
 <br>
 <%= link_to "投稿一覧へ", :controller => "articles", :action => "index", class: "btn index-btn" %>
+		</div>
+	</div>
 </div>

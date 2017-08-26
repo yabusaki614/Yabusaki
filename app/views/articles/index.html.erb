@@ -1,4 +1,13 @@
-<div class="back-img">
+<html>
+<head>
+	<title>タイトル</title>
+</head>
+<body>
+<div id="container2">
+	<div class="back-img1">
+		<div id="contents">
+			<div class="parent">
+				<div class="center">
 <h1>投稿一覧</h1>
 <% @articles.each do |article| %>
   <p>タイトル</p>
@@ -7,4 +16,12 @@
 <br>
 <br>
 <%= link_to "新しく投稿", :controller => "articles", :action => "new", class: "btn new-btn" %>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
 </div>
+</body>
+</html>

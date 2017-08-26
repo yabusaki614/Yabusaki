@@ -20,7 +20,11 @@ class ArticlesController < ApplicationController
 	def show
 		@article = Article.find(params[:id])
 	end
-	
+	#空の値を探す　→helperへ
+	def search
+    redirect_to :action => "new" if !search_validate
+  	end
+
 	private
 	def article_params
 	  params.require(:article).permit(:title, :body, :author)
