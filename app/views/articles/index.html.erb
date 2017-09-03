@@ -8,10 +8,14 @@
 		<div id="contents">
 			<div class="parent">
 				<div class="center">
-<h1>投稿一覧</h1>
-<% @articles.each do |article| %>
-  <p>タイトル</p>
-   <span><%=link_to article.title, "/articles/#{article.id}" %></span>
+	<h1>投稿一覧</h1>
+	<% @articles.each do |article| %>
+	  <p>タイトル</p>
+   	<span><%= link_to article.title, "/articles/#{article.id}" %></span>
+   	<br>
+   	<%= link_to "編集", edit_article_path(article.id), class: "btn edit-btn" %>
+   	<%= link_to "削除", article_path(article.id), method: :delete  %>
+   	<br>
 <% end %>
 <br>
 <br>

@@ -28,6 +28,10 @@ h1{
 	padding-top: 20vh;
 	font-size: 150%;
 }
+h2{
+	font-size: 150%;
+
+}
 .top-name{
 	text-align: center;
 }
@@ -45,7 +49,7 @@ h1{
 
 .back-img2{ 
 	padding: 0 40px 60px; 
-	color: #000;
+	/*color: #000;*/
 	height: auto;
 	background-image: url(center.png); 
 	background-size: 700px 100px;
@@ -62,7 +66,7 @@ h1{
 }
 
 .color: {
-	color: #000;
+	color: red;
 }
 p.body {
 	border-top: double 7px #000;

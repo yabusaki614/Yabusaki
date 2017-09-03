@@ -13,8 +13,8 @@
 <p>by <%= @article.author %></p>
 
 
-<%# link_to "編集", edit_post_path(@post.id), class: "btn edit-btn" %>
-<%# link_to "削除", destroy_post_path(@post.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>
+<%= link_to "編集", edit_article_path(@article.id), class: "btn edit-btn" %><br>
+<%= link_to "削除", article_path(@article.id), method: :delete, class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>
 <br>
 <%= link_to "投稿一覧にもどる", :controller => "articles", :action => "index" %>
 		</div>

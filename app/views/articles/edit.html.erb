@@ -3,17 +3,17 @@
 	</div>
 	<div class="back-img2">
 		<div class="center">
- <h2>新規投稿</h2>
- <% if @article.errors.any? %>
-  <h3>入力した内容にエラーが<%= @article.errors.count %>件あります</h3>
+<h2>編集</h2>
+<% if @article.errors.any? %>
+  <div class="color"><h3>入力した内容にエラーが<%= @article.errors.count %>件あります</h3>
     <ul>
       <% @article.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
-    </ul>
+    </ul></div>
   <% end %>
   <br>
- <%= form_for (@article) do |f| %>
+<%= form_for (@article) do |f| %>
  <div >タイトル<br>
  <%= f.text_field :title ,:size => "10x20"%></div>
  <div> 本文 <br>
@@ -25,9 +25,10 @@
 <div><%# f.submit "送信" %>
 	<input type="submit" value="" class="submit_btn">
 </div>
+
 <% end %>
-<br>
-<%= link_to "投稿一覧へ", :controller => "articles", :action => "index", class: "btn index-btn" %>
+
+<%= link_to "投稿一覧にもどる", :controller => "articles", :action => "index" %>
 		</div>
 	</div>
 	<div class="footer">
